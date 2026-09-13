@@ -18,6 +18,7 @@ body{
 
 .container{
   width: 100%;
+  max-width: 1200px;
 
   background:#0d141d ;
   border: 1px solid #263342;
@@ -154,4 +155,74 @@ header{
     padding: 20px 0;
     font-size: 14px;
     color: #fff;
+  }
+
+  @media (max-width: 700px){
+    body{
+      padding: 10px;
+    }
+
+    .container{
+      padding: 20px 14px;
+      border-radius: 14px;
+    }
+
+    header{
+      display: block;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .head h1{
+      font-size: 26px;
+    }
+
+    .left{
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .left a{
+      margin-left: 0;
+    }
+
+    .players{
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .player1,
+    .player2{
+      padding: 20px 14px;
+    }
+
+    .players .VS{
+      order: 0;
+    }
+
+    .vs img{
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btn{
+      width: min(100%, 220px);
+      margin: 22px auto;
+    }
+
+    .button{
+      font-size: 18px;
+      padding: 10px 16px;
+    }
+
+    h3{
+      font-size: 18px;
+    }
+
+    .winner-name{
+      font-size: 20px;
+    }
   }
